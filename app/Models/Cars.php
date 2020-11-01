@@ -23,6 +23,12 @@ class Cars extends Model
 
     public function path ()
     {
-        return '/cars/' . $this->id;
+        return '/cars/' . $this -> id;
     }
+
+    public function img ()
+    {
+        return '/images/' . $this -> name . ".jpg";
+    }
+
 }

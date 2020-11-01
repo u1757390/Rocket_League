@@ -5,6 +5,7 @@ namespace Database\Factories;
 use App\Models\Cars;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
+
 class CarsFactory extends Factory
 {
 
@@ -12,8 +13,6 @@ class CarsFactory extends Factory
 
     public function definition()
     {
-        return [
-            //
-        ];
+        //
     }
 }

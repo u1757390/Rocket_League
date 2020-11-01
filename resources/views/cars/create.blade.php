@@ -2,7 +2,7 @@
 
 @section ('header')
 
-    <div class="text-4xl mb-8">
+    <div class="text-4xl mt-4 mb-8">
         <h1>Add a Car</h1>
     </div>
 
@@ -15,13 +15,14 @@
         @csrf
 
         <div class="flex flex-wrap">
-            <div class="w-full">
-                <label class="block" for="name">
+            <div class="w-1/3">
+                <label class="block mb-2" for="name">
                     Car Name
                 </label>
 
-                <input class="block w-2/5 @error ('name') border border-red-500 @enderror"
-                       type="text" name="name" data-lpignore="true" autocomplete="off" placeholder="e.g. Octane" />
+                <input type class="block w-3/5 @error ('name') border border-red-500 @enderror"
+                       type="text" name="name" data-lpignore="true"
+                       autocomplete="off" placeholder="e.g. Octane" />
 
                 @error ('name')
                 <div class="alert-message">
@@ -30,14 +31,12 @@
                 @enderror
 
             </div>
-        </div>
 
-        <div class="flex flex-wrap">
             <div class="w-1/2">
-                <label class="block" for="email">
+                <label class="block mb-2" for="rarity">
                     Rarity
                 </label>
-                <input class="block w-4/5 @error ('rarity') border border-red-500 @enderror"
+                <input class="block w-2/5 @error ('rarity') border border-red-500 @enderror"
                        type="text" name="rarity" data-lpignore="true"
                        autocomplete="off" placeholder="e.g. Import" />
 
@@ -49,13 +48,16 @@
 
             </div>
 
+        </div>
+
+        <div class="flex flex-wrap">
             <div class="w-1/2">
-                <label class="block" for="phone">
+                <label class="block mb-2 mt-2" for="colour">
                     Colour
                 </label>
-                <input class="block w-4/5 @error ('colour') border border-red-500 @enderror"
+                <input class="block w-2/5 @error ('colour') border border-red-500 @enderror"
                        type="text" name="colour" data-lpignore="true"
-                       autocomplete="off" placeholder="e.g. Sky Blue" />
+                       autocomplete="off" placeholder="e.g. Crimson" />
 
                 @error ('colour')
                 <div class="alert-message">
@@ -65,12 +67,15 @@
 
             </div>
         </div>
-
-        <div class="flex flex-wrap mt-4">
+        <div class="flex flex-wrap mt-8">
             <div class="w-full">
-                <button class="nav-button" type="submit"><i class="fas fa-paw mr-2"></i>Add Car</button>
+                <button type="submit" class="mr-2 hover:bg-blue-300 text-gray-800 py-2 px-4 border border-gray-400 rounded shadow">
+                    Update Details
+                </button>
                 <a href="/">
-                    <button class="nav-button" type="button"><i class="fas fa-paw mr-2"></i>Cancel</button>
+                    <button type="button" class="hover:bg-blue-300 text-gray-800 py-2 px-4 border border-gray-400 rounded shadow">
+                        Cancel
+                    </button>
                 </a>
             </div>
         </div>
