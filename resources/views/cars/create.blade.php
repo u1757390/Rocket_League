@@ -70,7 +70,7 @@
         <div class="flex flex-wrap mt-8">
             <div class="w-full">
                 <button type="submit" class="mr-2 hover:bg-blue-300 text-gray-800 py-2 px-4 border border-gray-400 rounded shadow">
-                    Update Details
+                    Create Car
                 </button>
                 <a href="/">
                     <button type="button" class="hover:bg-blue-300 text-gray-800 py-2 px-4 border border-gray-400 rounded shadow">
