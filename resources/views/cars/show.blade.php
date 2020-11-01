@@ -18,7 +18,7 @@
                     Colour: {{ $cars -> colour}}
                 </p>
 
-                <p class="crud-button mt-4">
+                <p class="mt-4">
                     <a href="{{ $cars -> path.('/edit')}}"> Edit Car
                         <i class="fas fa-edit"></i>
                     </a>

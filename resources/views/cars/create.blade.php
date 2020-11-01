@@ -38,7 +38,7 @@
                     Rarity
                 </label>
                 <input class="block w-4/5 @error ('rarity') border border-red-500 @enderror"
-                       type="text" name="email" data-lpignore="true"
+                       type="text" name="rarity" data-lpignore="true"
                        autocomplete="off" placeholder="e.g. Import" />
 
                 @error ('rarity')
@@ -54,7 +54,7 @@
                     Colour
                 </label>
                 <input class="block w-4/5 @error ('colour') border border-red-500 @enderror"
-                       type="text" name="phone" data-lpignore="true"
+                       type="text" name="colour" data-lpignore="true"
                        autocomplete="off" placeholder="e.g. Sky Blue" />
 
                 @error ('colour')
@@ -68,7 +68,7 @@
 
         <div class="flex flex-wrap mt-4">
             <div class="w-full">
-                <button class="nav-button" type="submit"><i class="fas fa-paw mr-2"></i>Add Person</button>
+                <button class="nav-button" type="submit"><i class="fas fa-paw mr-2"></i>Add Car</button>
                 <a href="/">
                     <button class="nav-button" type="button"><i class="fas fa-paw mr-2"></i>Cancel</button>
                 </a>
